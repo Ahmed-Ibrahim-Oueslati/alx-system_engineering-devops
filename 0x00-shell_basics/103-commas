@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -ad */ | sed 's,^,./,'
+ls -m 
