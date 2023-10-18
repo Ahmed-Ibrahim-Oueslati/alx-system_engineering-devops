@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo chown --dereference vincent:staff  _hello 
+sudo chown vincent:staff --dereference  _hello 
