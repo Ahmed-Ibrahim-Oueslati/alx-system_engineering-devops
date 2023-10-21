@@ -1,2 +1,2 @@
 #!/bin/bash
-ls  *.gif | sed 's/\.gif$//'
+find . -maxdepth 3 -name '*.gif' | sed 's/\.gif$//' | rev | cut -d'/' -f1 | rev
