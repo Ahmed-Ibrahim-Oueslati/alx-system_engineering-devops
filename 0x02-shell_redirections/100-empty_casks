@@ -1,2 +1,2 @@
 #!/bin/bash
-ls | du | sed '$d'
+find  -empty | tr -d './'
