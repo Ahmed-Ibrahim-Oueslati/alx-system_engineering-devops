@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -name  '*.gif' | sed 's/\.gif$//' | rev | cut -d'/' -f1 | rev
+find .  -name  '*.gif' -type f | sed 's/\.gif$//' | rev | cut -d'/' -f1 | rev
