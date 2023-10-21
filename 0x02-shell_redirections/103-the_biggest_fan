@@ -1,0 +1,2 @@
+#!/bin/bash
+sort jaw | uniq -d | head -n 11
