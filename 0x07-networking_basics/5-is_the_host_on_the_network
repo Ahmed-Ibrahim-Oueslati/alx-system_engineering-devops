@@ -4,7 +4,7 @@
 
 # Check if an argument is passed
 if [ -z "$1" ]; then
-  echo "Usage: $0 {IP_ADDRESS}"
+  echo "Usage: 5-is_the_host_on_the_network $0 "
   exit 1
 fi
 
