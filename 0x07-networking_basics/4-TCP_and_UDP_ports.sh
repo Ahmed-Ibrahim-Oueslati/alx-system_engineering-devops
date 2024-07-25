@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Display listening ports with PID and program name
 netstat -tuln | grep LISTEN | while read -r line; do
     # Extract the protocol, local address, and port
