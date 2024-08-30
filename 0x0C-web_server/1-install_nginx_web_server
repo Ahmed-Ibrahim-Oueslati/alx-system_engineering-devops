@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# install Nginx on Web-Sever-01
+# Update Packages
+sudo apt-get update
+sudo apt-get -y install nginx
+
+# allow incoming traffic for the Nginx HTTP service
+sudo ufw allow 'Nginx HTTP'
+
+# Create index.html
+echo "Hello World!" | sudo tee /var/www/html/index.html
+
+# Tests Nginx configuration
+sudo nginx -t
+
+# Restarts Nginx
+sudo service nginx start

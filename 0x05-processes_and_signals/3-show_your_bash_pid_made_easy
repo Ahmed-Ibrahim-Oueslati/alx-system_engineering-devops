@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# script displaying a PID
+# ps is not allowed
+pgrep bash -l

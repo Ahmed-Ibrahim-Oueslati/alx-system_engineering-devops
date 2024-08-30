@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# script configures the container to fit the above requirements
+
+# add new user "nginx" to nginx config
+sudo sed -i 's/#user www-data/user nginx/' /etc/nginx/nginx.conf
+
+chown -R nginx:nginx /etc/nginx/nginx.conf
+chmod 700 /etc/nginx/nginx.conf
+
+# listen on port 8080
+sudo sed -i 's/80/8080/' /etc/nginx/sites-available/default
+
+# kill apache2 process to free port 8080
+pkill apache2
+sudo -u nginx service nginx start
